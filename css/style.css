@@ -1,0 +1,97 @@
+* {
+    margin: 0;/*nesne ortalama*/
+    padding: 0;/*dolgu*/
+    box-sizing: border-box;/*genişlik yükseklik referansı*/
+}
+
+html{
+    font-size: 16px;
+} 
+
+body {
+    font-family: 'Roboto';/*yazı tipi*/
+    min-height: 100vh; /*min yükseklik*/
+    background-color: #ffffff;/*arka plan rengi*/
+}
+
+#content {
+    max-width: 1300px; /*resim içeerik askari genişlik*/
+    display: flex;/*kapsayıcı esnekliği*/
+    margin: auto;/*nesne ortalama*/
+    flex-wrap: wrap;/*kaydırınca ögeleri satıra sığdırma kaydırınca*/
+    gap: 16px;/*tarayıcı altındaki elementlerin aralarındaki boşluk*/
+    justify-content: center;/*yazıları hizalama ve bölünmesi*/
+    padding: 24px 0;/*içerik etrafındaki boşluk*/
+}
+
+.card {
+    width: 300px;/*genişlik*/
+    height: 300px;/*yükseklik*/
+    margin: 16px 0;/*nesneler arası mesafe*/
+    padding: 0 16px;/*dolgu*/
+    text-align: center;/*yatayda hizlama*/
+    display: flex;/*esneklik*/
+    flex-direction: column;/*dikey hizalama*/
+    justify-content: space-evenly;/*iki bitişik hizalama arasıboşluk*/
+    border-radius: 5px;/*yuvarlak kenar*/
+    background: rgba(255, 0, 0, 0.356);
+    border-radius: 16px;/*yuvarlak kenar*/
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);/*web sayfası işlemesine izin ver*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 8px;/*üst kenar boşluğu*/
+    margin-bottom: 16px;/*alt kenar boşluğu*/
+    border-radius: 50%;/*yuvarlak kenar*/
+    background-color: rgb(59, 50, 50);
+}
+
+.img-wrapper img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 550;/*yazı kalınlığı*/
+    text-transform: uppercase;/*büyük harf küçük harf ayarlama*/
+    color: #303C47;
+}
+
+.yil {
+    font-size: 16px;
+    opacity: .5;/*opaklık*/
+}
+
+.work {
+    font-size: 14px;
+    color: #000000;
+}
+
+.notWork {
+    padding: 8px 0;/*dolgu*/
+    border-radius: 7px;/*yuvarlak kenar*/
+    color: rgb(0, 0, 0);
+    background-color: #8d7373;
+}
+
+.social-link {
+    display: flex;/*kapsayıcı esnekliği*/
+    justify-content: center;
+    align-items: center;
+    gap: 7px;/*tarayıcı altındaki elementlerin aralarındaki boşluk*/
+}
+
+.social-link a {
+    color: #332d2d;
+}
+
+.social-link a:hover {
+    color: #222020;
+}
